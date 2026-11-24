@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>API Dashboard | Lab 8</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark topbar"><div class="container"><a class="navbar-brand fw-bold" href="#">API<span class="brand-accent">Board</span></a><span class="navbar-text text-white-50">Web Technologies · Lab 8</span></div></nav>
+<main class="container py-4 py-lg-5">
+ <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4">
+  <div><div class="eyebrow">DATA INTEGRATION</div><h1 class="h2 fw-bold mb-1">API Dashboard</h1><p class="text-secondary mb-0">Load JSON records with Fetch API and jQuery AJAX.</p></div>
+  <div class="d-flex gap-2"><button id="fetchBtn" class="btn btn-primary">Load with Fetch</button><button id="ajaxBtn" class="btn btn-outline-primary">Load with jQuery</button></div>
+ </div>
+ <div class="row g-3 mb-4">
+  <div class="col-12 col-sm-4"><div class="stat-card"><span>Total records</span><strong id="totalCount">—</strong></div></div>
+  <div class="col-12 col-sm-4"><div class="stat-card"><span>Active students</span><strong id="activeCount">—</strong></div></div>
+  <div class="col-12 col-sm-4"><div class="stat-card"><span>Departments</span><strong id="deptCount">—</strong></div></div>
+ </div>
+ <section class="card panel-card mb-4">
+  <div class="card-body">
+   <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3"><div><h2 class="h5 fw-bold mb-1">Student records</h2><p class="small text-secondary mb-0">Sample data loaded from <code>data/sample.json</code></p></div><span id="sourceBadge" class="badge text-bg-secondary">Not loaded</span></div>
+   <div id="message" class="alert alert-info mb-3" role="status">Choose Fetch or jQuery AJAX to load the sample JSON file.</div>
+   <div class="row g-2 mb-3"><div class="col-md-7"><input id="searchInput" class="form-control" placeholder="Search name, email or department..." disabled></div><div class="col-md-3"><select id="departmentFilter" class="form-select" disabled><option value="">All departments</option></select></div><div class="col-md-2"><button id="clearBtn" class="btn btn-light w-100" disabled>Clear</button></div></div>
+   <div class="table-responsive"><table class="table table-hover align-middle"><thead><tr><th>#</th><th>Student</th><th>Email</th><th>Department</th><th>Semester</th><th>Status</th></tr></thead><tbody id="recordsBody"><tr><td colspan="6" class="text-center text-secondary py-5">No records loaded yet.</td></tr></tbody></table></div>
+   <div class="d-flex flex-wrap justify-content-between align-items-center gap-2"><small id="resultInfo" class="text-secondary">Waiting for data</small><nav aria-label="Table pagination"><ul id="pagination" class="pagination pagination-sm mb-0"></ul></nav></div>
+  </div>
+ </section>
+ <div class="d-flex flex-wrap justify-content-between gap-2 small text-secondary"><span>Last updated: <strong id="updatedAt">—</strong></span><span>Data source: Local JSON sample file</span></div>
+ <section class="mt-4"><h2 class="h6 fw-bold">Request methods</h2><div class="row g-3"><div class="col-md-6"><div class="method-card"><span class="method-tag fetch-tag">FETCH API</span><p class="mb-0 mt-2 small text-secondary">Uses fetch(), checks HTTP response, parses JSON and catches errors.</p></div></div><div class="col-md-6"><div class="method-card"><span class="method-tag ajax-tag">JQUERY AJAX</span><p class="mb-0 mt-2 small text-secondary">Uses $.ajax() with success and error callbacks to retrieve the same JSON file.</p></div></div></div></section>
+</main>
+<footer class="py-4 text-center small text-secondary">Lab 8 · JSON + jQuery + AJAX/Fetch</footer>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/app.js"></script>
+</body></html>

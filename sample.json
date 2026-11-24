@@ -1,0 +1,101 @@
+{
+  "success": true,
+  "data": [
+    {
+      "id": 1,
+      "name": "Ayesha Khan",
+      "department": "Computer Science",
+      "semester": 4,
+      "email": "ayesha@example.com",
+      "status": "Active"
+    },
+    {
+      "id": 2,
+      "name": "Ali Raza",
+      "department": "Software Engineering",
+      "semester": 4,
+      "email": "ali@example.com",
+      "status": "Active"
+    },
+    {
+      "id": 3,
+      "name": "Sana Ahmed",
+      "department": "Information Technology",
+      "semester": 3,
+      "email": "sana@example.com",
+      "status": "Pending"
+    },
+    {
+      "id": 4,
+      "name": "Hamza Noor",
+      "department": "Computer Science",
+      "semester": 5,
+      "email": "hamza@example.com",
+      "status": "Active"
+    },
+    {
+      "id": 5,
+      "name": "Maham Sheikh",
+      "department": "Software Engineering",
+      "semester": 2,
+      "email": "maham@example.com",
+      "status": "Active"
+    },
+    {
+      "id": 6,
+      "name": "Usman Shah",
+      "department": "Information Technology",
+      "semester": 6,
+      "email": "usman@example.com",
+      "status": "Pending"
+    },
+    {
+      "id": 7,
+      "name": "Zoya Malik",
+      "department": "Computer Science",
+      "semester": 3,
+      "email": "zoya@example.com",
+      "status": "Active"
+    },
+    {
+      "id": 8,
+      "name": "Daniyal Ali",
+      "department": "Software Engineering",
+      "semester": 5,
+      "email": "daniyal@example.com",
+      "status": "Active"
+    },
+    {
+      "id": 9,
+      "name": "Hira Iqbal",
+      "department": "Information Technology",
+      "semester": 4,
+      "email": "hira@example.com",
+      "status": "Active"
+    },
+    {
+      "id": 10,
+      "name": "Bilal Ahmed",
+      "department": "Computer Science",
+      "semester": 2,
+      "email": "bilal@example.com",
+      "status": "Pending"
+    },
+    {
+      "id": 11,
+      "name": "Noor Fatima",
+      "department": "Software Engineering",
+      "semester": 6,
+      "email": "noor@example.com",
+      "status": "Active"
+    },
+    {
+      "id": 12,
+      "name": "Saad Hussain",
+      "department": "Information Technology",
+      "semester": 1,
+      "email": "saad@example.com",
+      "status": "Active"
+    }
+  ]
+}
